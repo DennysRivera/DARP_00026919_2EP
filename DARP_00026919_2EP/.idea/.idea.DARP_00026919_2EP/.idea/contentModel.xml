@@ -45,9 +45,6 @@
         <e p="UControlAdmin.cs" t="Include" />
         <e p="UControlAdmin.Designer.cs" t="Include" />
         <e p="UControlAdmin.resx" t="Include" />
-        <e p="UControlUser.cs" t="Include" />
-        <e p="UControlUser.Designer.cs" t="Include" />
-        <e p="UControlUser.resx" t="Include" />
       </e>
     </e>
   </component>
