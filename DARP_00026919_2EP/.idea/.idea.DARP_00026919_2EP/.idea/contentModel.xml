@@ -42,9 +42,15 @@
         <e p="frmUser.cs" t="Include" />
         <e p="frmUser.Designer.cs" t="Include" />
         <e p="frmUser.resx" t="Include" />
-        <e p="UControlAdmin.cs" t="Include" />
-        <e p="UControlAdmin.Designer.cs" t="Include" />
-        <e p="UControlAdmin.resx" t="Include" />
+        <e p="UserAddress.cs" t="Include" />
+        <e p="UserAddress.Designer.cs" t="Include" />
+        <e p="UserAddress.resx" t="Include" />
+        <e p="UserOrder.cs" t="Include" />
+        <e p="UserOrder.Designer.cs" t="Include" />
+        <e p="UserOrder.resx" t="Include" />
+        <e p="UserOrderHistory.cs" t="Include" />
+        <e p="UserOrderHistory.Designer.cs" t="Include" />
+        <e p="UserOrderHistory.resx" t="Include" />
       </e>
     </e>
   </component>

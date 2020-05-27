@@ -122,6 +122,24 @@
         <Compile Include="Vista\frmUser.Designer.cs">
           <DependentUpon>frmUser.cs</DependentUpon>
         </Compile>
+        <Compile Include="Vista\UserAddress.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Vista\UserAddress.Designer.cs">
+          <DependentUpon>UserAddress.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Vista\UserOrder.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Vista\UserOrder.Designer.cs">
+          <DependentUpon>UserOrder.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Vista\UserOrderHistory.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Vista\UserOrderHistory.Designer.cs">
+          <DependentUpon>UserOrderHistory.cs</DependentUpon>
+        </Compile>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -139,6 +157,15 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Vista\frmUser.resx">
           <DependentUpon>frmUser.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\UserAddress.resx">
+          <DependentUpon>UserAddress.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\UserOrder.resx">
+          <DependentUpon>UserOrder.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\UserOrderHistory.resx">
+          <DependentUpon>UserOrderHistory.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
