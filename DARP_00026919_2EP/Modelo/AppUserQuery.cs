@@ -9,7 +9,7 @@ namespace DARP_00026919_2EP
         public static List<AppUser> getLista()
         {
             var dt = Connection.ExecuteQuery($"SELECT * FROM APPUSER");
-            List<AppUser> usuariosRegis = new List<AppUser>();
+            List<AppUser> userList = new List<AppUser>();
 
             foreach (DataRow n in dt.Rows)
             {
@@ -20,10 +20,10 @@ namespace DARP_00026919_2EP
                 au.password = n[3].ToString();
                 au.admin = Convert.ToBoolean(n[4].ToString());
                 
-                usuariosRegis.Add(au);
+                userList.Add(au);
             }
 
-            return getLista();    
+            return userList;    
         }
         
         public static void newUser(AppUser nuevo)

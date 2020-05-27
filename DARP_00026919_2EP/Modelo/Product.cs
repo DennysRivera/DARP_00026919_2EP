@@ -2,9 +2,9 @@
 {
     public class Product
     {
-        private int idProduct { get; set; }
-        private int idBusiness { get; set; }
-        private string name { get; set; }
+        public int idProduct { get; set; }
+        public int idBusiness { get; set; }
+        public string name { get; set; }
 
         public Product()
         {

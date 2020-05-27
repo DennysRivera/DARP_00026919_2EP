@@ -9,7 +9,7 @@ namespace DARP_00026919_2EP
         public static List<AppOrder> getLista()
         {
             var dt = Connection.ExecuteQuery($"SELECT * FROM APPORDER");
-            List<AppOrder> usuariosRegis = new List<AppOrder>();
+            List<AppOrder> orderList = new List<AppOrder>();
 
             foreach (DataRow n in dt.Rows)
             {
@@ -19,10 +19,10 @@ namespace DARP_00026919_2EP
                 ao.idProduct = Convert.ToInt32(n[2]);
                 ao.idAddress = Convert.ToInt32(n[3]);
 
-                usuariosRegis.Add(ao);
+                orderList.Add(ao);
             }
 
-            return getLista();    
+            return orderList;    
         }
         
         public static void newOrder(AppOrder nuevo)
