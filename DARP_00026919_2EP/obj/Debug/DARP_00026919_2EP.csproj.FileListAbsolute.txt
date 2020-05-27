@@ -1,0 +1,10 @@
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\bin\Debug\DARP_00026919_2EP.exe.config
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\bin\Debug\DARP_00026919_2EP.pdb
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.csprojAssemblyReference.cache
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.Properties.Resources.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.csproj.GenerateResource.cache
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.exe
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.pdb
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.Form1.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UControlAdmin.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.csproj.CopyComplete

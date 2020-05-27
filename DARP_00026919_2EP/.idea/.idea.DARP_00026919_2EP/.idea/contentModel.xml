@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\denny\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\denny\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_DARP_00026919_2EP.-2112029486.00" t="ExcludeRecursive" />
+    <e p="C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP" t="IncludeRecursive">
+      <e p="App.config" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="DARP_00026919_2EP.csproj" t="IncludeRecursive" />
+      <e p="DARP_00026919_2EP.sln" t="IncludeFlat" />
+      <e p="Modelo" t="Include">
+        <e p="Address.cs" t="Include" />
+        <e p="AddressQuery.cs" t="Include" />
+        <e p="AppOrder.cs" t="Include" />
+        <e p="AppOrderQuery.cs" t="Include" />
+        <e p="AppUser.cs" t="Include" />
+        <e p="AppUserQuery.cs" t="Include" />
+        <e p="Business.cs" t="Include" />
+        <e p="BusinessQuery.cs" t="Include" />
+        <e p="Connection.cs" t="Include" />
+        <e p="Product.cs" t="Include" />
+        <e p="ProductQuery.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="packages.config" t="Include" />
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="AssemblyInfo.cs" t="Include" />
+        <e p="Resources.Designer.cs" t="Include" />
+        <e p="Resources.resx" t="Include" />
+        <e p="Settings.Designer.cs" t="Include" />
+        <e p="Settings.settings" t="Include" />
+      </e>
+      <e p="Vista" t="Include">
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="frmAdmin.cs" t="Include" />
+        <e p="frmAdmin.Designer.cs" t="Include" />
+        <e p="frmAdmin.resx" t="Include" />
+        <e p="frmUser.cs" t="Include" />
+        <e p="frmUser.Designer.cs" t="Include" />
+        <e p="UControlAdmin.cs" t="Include" />
+        <e p="UControlAdmin.Designer.cs" t="Include" />
+        <e p="UControlAdmin.resx" t="Include" />
+        <e p="UControlUser.cs" t="Include" />
+        <e p="UControlUser.Designer.cs" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>
