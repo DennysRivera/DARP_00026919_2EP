@@ -6,7 +6,6 @@ C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_000269
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.exe
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.pdb
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.Form1.resources
-C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UControlAdmin.resources
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.csproj.CopyComplete
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\bin\Debug\Npgsql.dll
@@ -32,4 +31,6 @@ C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\bin\Debug\System.Valu
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.exe.config
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.frmAdmin.resources
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.frmUser.resources
-C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UControlUser.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UserAddress.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UserOrder.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UserOrderHistory.resources

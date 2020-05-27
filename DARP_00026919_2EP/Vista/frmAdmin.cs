@@ -4,9 +4,11 @@ namespace DARP_00026919_2EP
 {
     public partial class frmAdmin : Form
     {
-        public frmAdmin()
+        private AppUser usuario;
+        public frmAdmin(AppUser user)
         {
             InitializeComponent();
+            usuario = user;
         }
     }
 }

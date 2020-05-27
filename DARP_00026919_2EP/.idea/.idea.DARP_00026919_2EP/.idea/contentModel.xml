@@ -39,6 +39,11 @@
         <e p="frmAdmin.cs" t="Include" />
         <e p="frmAdmin.Designer.cs" t="Include" />
         <e p="frmAdmin.resx" t="Include" />
+        <e p="frmChangePass.cs" t="Include" />
+        <e p="frmChangePass.Designer.cs" t="Include" />
+        <e p="frmChangePass.resx" t="Include" />
+        <e p="frmRegister.cs" t="Include" />
+        <e p="frmRegister.Designer.cs" t="Include" />
         <e p="frmUser.cs" t="Include" />
         <e p="frmUser.Designer.cs" t="Include" />
         <e p="frmUser.resx" t="Include" />
