@@ -29,31 +29,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.uControlAdmin1 = new DARP_00026919_2EP.UControlAdmin();
             this.SuspendLayout();
-            // 
-            // uControlAdmin1
-            // 
-            this.uControlAdmin1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.uControlAdmin1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uControlAdmin1.Location = new System.Drawing.Point(0, 0);
-            this.uControlAdmin1.Name = "uControlAdmin1";
-            this.uControlAdmin1.Size = new System.Drawing.Size(612, 438);
-            this.uControlAdmin1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 438);
-            this.Controls.Add(this.uControlAdmin1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
         }
 
         #endregion
-
-        private DARP_00026919_2EP.UControlAdmin uControlAdmin1;
     }
 }

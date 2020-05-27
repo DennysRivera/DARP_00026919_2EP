@@ -109,7 +109,7 @@ namespace DARP_00026919_2EP
             this.tpCrearUsuairo.Location = new System.Drawing.Point(4, 24);
             this.tpCrearUsuairo.Name = "tpCrearUsuairo";
             this.tpCrearUsuairo.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCrearUsuairo.Size = new System.Drawing.Size(666, 507);
+            this.tpCrearUsuairo.Size = new System.Drawing.Size(724, 507);
             this.tpCrearUsuairo.TabIndex = 1;
             this.tpCrearUsuairo.Text = "Crear usuario";
             this.tpCrearUsuairo.UseVisualStyleBackColor = true;
@@ -263,9 +263,9 @@ namespace DARP_00026919_2EP
             // 
             // tabPage3
             // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(724, 507);
+            this.tabPage3.Size = new System.Drawing.Size(723, 508);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;

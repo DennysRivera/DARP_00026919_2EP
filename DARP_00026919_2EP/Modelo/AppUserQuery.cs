@@ -40,5 +40,11 @@ namespace DARP_00026919_2EP
             Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE idUser = {idUser}" +
                                      $"DELETE FROM APPUSER WHERE username = '{userName}'");
         }
+        
+        public static void updatePass(string username, string newPass)
+        {
+            Connection.ExecuteNonQuery($"UPDATE APPUSER SET password = '{newPass}'" +
+                                       $"WHERE username = '{username}'");
+        }
     }
 }

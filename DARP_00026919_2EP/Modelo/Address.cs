@@ -2,9 +2,9 @@
 {
     public class Address
     {
-        private int idAddress { get; set; }
-        private int idUser { get; set; }
-        private string address { get; set; }
+        public int idAddress { get; set; }
+        public int idUser { get; set; }
+        public string address { get; set; }
 
         public Address()
         {
