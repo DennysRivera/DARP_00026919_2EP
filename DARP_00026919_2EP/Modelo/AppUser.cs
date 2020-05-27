@@ -2,11 +2,11 @@
 {
     public class AppUser
     {
-        private int idUser { get; set; }
-        private string fullname { get; set; }
-        private string username { get; set; }
-        private string password { get; set; }
-        private bool admin { get; set; }
+        public int idUser { get; set; }
+        public string fullname { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
+        public bool admin { get; set; }
         
         public AppUser()
         {

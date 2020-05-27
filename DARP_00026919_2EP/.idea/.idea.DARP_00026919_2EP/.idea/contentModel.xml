@@ -41,11 +41,13 @@
         <e p="frmAdmin.resx" t="Include" />
         <e p="frmUser.cs" t="Include" />
         <e p="frmUser.Designer.cs" t="Include" />
+        <e p="frmUser.resx" t="Include" />
         <e p="UControlAdmin.cs" t="Include" />
         <e p="UControlAdmin.Designer.cs" t="Include" />
         <e p="UControlAdmin.resx" t="Include" />
         <e p="UControlUser.cs" t="Include" />
         <e p="UControlUser.Designer.cs" t="Include" />
+        <e p="UControlUser.resx" t="Include" />
       </e>
     </e>
   </component>

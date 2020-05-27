@@ -147,8 +147,14 @@
         <EmbeddedResource Include="Vista\frmAdmin.resx">
           <DependentUpon>frmAdmin.cs</DependentUpon>
         </EmbeddedResource>
+        <EmbeddedResource Include="Vista\frmUser.resx">
+          <DependentUpon>frmUser.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Vista\UControlAdmin.resx">
           <DependentUpon>UControlAdmin.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\UControlUser.resx">
+          <DependentUpon>UControlUser.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">

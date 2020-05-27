@@ -3,7 +3,7 @@ using Npgsql;
 
 namespace DARP_00026919_2EP
 {
-    public class Connection
+    public static class Connection
     {
         private static string host = "127.0.0.1",
             database = "Parcial02",
