@@ -4,10 +4,10 @@ namespace DARP_00026919_2EP
 {
     public class AppOrder
     {
-        private int idOrder { get; set; }
-        private DateTime createDate { get; set; }
-        private int idProduct { get; set; }
-        private int idAddress { get; set; }
+        public int idOrder { get; set; }
+        public DateTime createDate { get; set; }
+        public int idProduct { get; set; }
+        public int idAddress { get; set; }
 
         public AppOrder()
         {

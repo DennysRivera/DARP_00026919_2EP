@@ -37,7 +37,7 @@ namespace DARP_00026919_2EP
         
         public static void deleteUser(string userName, int idUser)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE idUser = '{idUser}'" +
+            Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE idUser = {idUser}" +
                                      $"DELETE FROM APPUSER WHERE username = '{userName}'");
         }
     }
