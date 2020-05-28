@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DARP_00026919_2EP
@@ -15,13 +9,21 @@ namespace DARP_00026919_2EP
         public Form1()
         {
             InitializeComponent();
+            PrepararLista();
+        }
+
+        private List<AppUser> PrepararLista()
+        {
+            List<AppUser> listaUsuarios = AppUserQuery.getLista();
+
+            return listaUsuarios;
         }
         
          private void btnLogin_Click(object sender, EventArgs e)
          {
-             List<AppUser> listaUsuarios = AppUserQuery.getLista();
-
-            if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
+             List<AppUser> listaUsuarios = PrepararLista();
+             
+             if (textBox1.Text.Equals("") || textBox2.Text.Equals(""))
             {
                 MessageBox.Show("Usuario/Contraseña no ingresado");
             }
@@ -70,6 +72,7 @@ namespace DARP_00026919_2EP
         {
             frmRegister ventana = new frmRegister();
             ventana.ShowDialog();
+            PrepararLista();
         }
         
         private void textBox2_KeyDown(object sender, KeyEventArgs e)

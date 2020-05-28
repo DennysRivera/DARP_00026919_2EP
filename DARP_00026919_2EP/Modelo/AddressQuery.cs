@@ -33,8 +33,7 @@ namespace DARP_00026919_2EP
         
         public static void deleteAddress(string address, int idAddress)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM APPORDER WHERE idAddress = {idAddress}" +
-                                       $"DELETE FROM ADDRESS WHERE address = '{address}'");
+            Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE address = '{address}'");
         }
         
         public static void updateAddress(string address, string idAddress)

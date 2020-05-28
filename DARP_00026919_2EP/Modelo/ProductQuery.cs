@@ -24,17 +24,17 @@ namespace DARP_00026919_2EP
             return productList;    
         }
         
-        public static void newProduct(Product nuevo)
+        public static void newProduct(int idBusiness, string name)
         {
             Connection.ExecuteNonQuery($"INSERT INTO PRODUCT(idBusiness, name) " +
-                                       $"VALUES({nuevo.idBusiness}," +
-                                       $" '{nuevo.name}')");
+                                       $"VALUES({idBusiness}," +
+                                       $" '{name}')");
         }
         
-        public static void deleteProduct(string name, int idProduct)
+        public static void deleteProduct(int idProduct)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM APPORDER WHERE idUser = {idProduct}" +
-                                       $"DELETE FROM PRODUCT WHERE name = '{name}'");
+            Connection.ExecuteNonQuery($"DELETE FROM PRODUCT WHERE idProduct = {idProduct}");
         }
+        
     }
 }

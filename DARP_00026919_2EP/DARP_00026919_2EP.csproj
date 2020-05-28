@@ -170,6 +170,9 @@
         <EmbeddedResource Include="Vista\frmChangePass.resx">
           <DependentUpon>frmChangePass.cs</DependentUpon>
         </EmbeddedResource>
+        <EmbeddedResource Include="Vista\frmRegister.resx">
+          <DependentUpon>frmRegister.cs</DependentUpon>
+        </EmbeddedResource>
         <EmbeddedResource Include="Vista\frmUser.resx">
           <DependentUpon>frmUser.cs</DependentUpon>
         </EmbeddedResource>

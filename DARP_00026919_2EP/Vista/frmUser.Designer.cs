@@ -40,16 +40,16 @@ namespace DARP_00026919_2EP
             // 
             this.btnHome.Location = new System.Drawing.Point(12, 12);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(126, 71);
+            this.btnHome.Size = new System.Drawing.Size(126, 72);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.Location = new System.Drawing.Point(144, 12);
+            this.btnOrdenar.Location = new System.Drawing.Point(143, 12);
             this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(126, 71);
+            this.btnOrdenar.Size = new System.Drawing.Size(126, 72);
             this.btnOrdenar.TabIndex = 1;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = true;
@@ -58,7 +58,7 @@ namespace DARP_00026919_2EP
             // 
             this.btnDireccion.Location = new System.Drawing.Point(276, 12);
             this.btnDireccion.Name = "btnDireccion";
-            this.btnDireccion.Size = new System.Drawing.Size(126, 71);
+            this.btnDireccion.Size = new System.Drawing.Size(126, 72);
             this.btnDireccion.TabIndex = 2;
             this.btnDireccion.Text = "Mi dirección";
             this.btnDireccion.UseVisualStyleBackColor = true;

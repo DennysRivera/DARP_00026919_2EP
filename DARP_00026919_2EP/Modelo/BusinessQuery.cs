@@ -24,17 +24,16 @@ namespace DARP_00026919_2EP
             return businessList;
         }
         
-        public static void newBusiness(Business nuevo)
+        public static void newBusiness(string name, string desc)
         {
             Connection.ExecuteNonQuery($"INSERT INTO BUSINESS(name, description) " +
-                                       $"VALUES('{nuevo.name}'," +
-                                       $"'{nuevo.description}')");
+                                       $"VALUES('{name}'," +
+                                       $"'{desc}')");
         }
         
-        public static void deleteBusiness(string name, int idBusiness)
+        public static void deleteBusiness(int idBusiness)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM PRODUCT WHERE idUser = {idBusiness}" +
-                                       $"DELETE FROM BUSINESS WHERE name = '{name}'");
+            Connection.ExecuteNonQuery($"DELETE FROM BUSINESS WHERE idBusiness = {idBusiness}");
         }
     }
 }

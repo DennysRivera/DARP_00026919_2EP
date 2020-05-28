@@ -46,86 +46,93 @@ namespace DARP_00026919_2EP
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(43, 47);
+            this.label1.Location = new System.Drawing.Point(45, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 45);
+            this.label1.Size = new System.Drawing.Size(100, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombres:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(43, 119);
+            this.label2.Location = new System.Drawing.Point(45, 128);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 45);
+            this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Apellidos:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(43, 182);
+            this.label3.Location = new System.Drawing.Point(45, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(156, 45);
+            this.label3.Size = new System.Drawing.Size(100, 42);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Usuario:";
+            this.label3.Text = "Nombre de usuario:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(43, 254);
+            this.label4.Location = new System.Drawing.Point(45, 307);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 45);
+            this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 3;
             this.label4.Text = "Contraseña:";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(43, 325);
+            this.label5.Location = new System.Drawing.Point(45, 380);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(156, 45);
+            this.label5.Size = new System.Drawing.Size(100, 44);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Confirmar contraseña:";
+            this.label5.Text = "Confirma contraseña:";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(225, 45);
+            this.textBox1.Location = new System.Drawing.Point(219, 57);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 23);
+            this.textBox1.Size = new System.Drawing.Size(192, 23);
             this.textBox1.TabIndex = 5;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(225, 117);
+            this.textBox2.Location = new System.Drawing.Point(219, 129);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(198, 23);
+            this.textBox2.Size = new System.Drawing.Size(192, 23);
             this.textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(225, 182);
+            this.textBox3.Location = new System.Drawing.Point(219, 222);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(198, 23);
+            this.textBox3.Size = new System.Drawing.Size(192, 23);
             this.textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(225, 252);
+            this.textBox4.Location = new System.Drawing.Point(219, 308);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(198, 23);
+            this.textBox4.PasswordChar = '*';
+            this.textBox4.Size = new System.Drawing.Size(192, 23);
             this.textBox4.TabIndex = 8;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(225, 322);
+            this.textBox5.Location = new System.Drawing.Point(219, 392);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 23);
+            this.textBox5.PasswordChar = '*';
+            this.textBox5.Size = new System.Drawing.Size(192, 23);
             this.textBox5.TabIndex = 9;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(154, 366);
+            this.button1.Location = new System.Drawing.Point(167, 463);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(189, 53);
+            this.button1.Size = new System.Drawing.Size(132, 52);
             this.button1.TabIndex = 10;
-            this.button1.Text = "Registrarse";
+            this.button1.Text = "Crear usuario";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -133,7 +140,7 @@ namespace DARP_00026919_2EP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 432);
+            this.ClientSize = new System.Drawing.Size(505, 527);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
@@ -154,9 +161,6 @@ namespace DARP_00026919_2EP
 
         #endregion
 
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
@@ -165,5 +169,8 @@ namespace DARP_00026919_2EP
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

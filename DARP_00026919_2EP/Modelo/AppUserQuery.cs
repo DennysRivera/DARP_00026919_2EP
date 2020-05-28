@@ -28,17 +28,16 @@ namespace DARP_00026919_2EP
         
         public static void newUser(AppUser nuevo)
         {
-            Connection.ExecuteNonQuery($"INSERT INTO USUARIO(fullname, username, password, userType) " +
+            Connection.ExecuteNonQuery($"INSERT INTO APPUSER(fullname, username, password, userType) " +
                                      $"VALUES('{nuevo.fullname}'," +
-                                     $" '{nuevo.username}'," +
+                                     $"'{nuevo.username}'," +
                                      $"'{nuevo.password}'," +
                                      $"{nuevo.admin})");
         }
         
-        public static void deleteUser(string userName, int idUser)
+        public static void deleteUser(int idUser)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE idUser = {idUser}" +
-                                     $"DELETE FROM APPUSER WHERE username = '{userName}'");
+            Connection.ExecuteNonQuery($"DELETE FROM APPUSER WHERE username = {idUser}");
         }
         
         public static void updatePass(string username, string newPass)
