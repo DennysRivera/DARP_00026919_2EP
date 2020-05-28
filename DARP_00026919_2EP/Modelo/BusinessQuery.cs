@@ -31,9 +31,9 @@ namespace DARP_00026919_2EP
                                        $"'{desc}')");
         }
         
-        public static void deleteBusiness(int idBusiness)
+        public static void deleteBusiness(string name)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM BUSINESS WHERE idBusiness = {idBusiness}");
+            Connection.ExecuteNonQuery($"DELETE FROM BUSINESS WHERE name = '{name}'");
         }
     }
 }

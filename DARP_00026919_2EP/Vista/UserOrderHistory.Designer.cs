@@ -33,19 +33,15 @@ namespace DARP_00026919_2EP
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.cmbNegocio = new System.Windows.Forms.ComboBox();
-            this.cmbProducto = new System.Windows.Forms.ComboBox();
             this.cmbID = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnEliminarO = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,20 +61,11 @@ namespace DARP_00026919_2EP
             // 
             this.cmbNegocio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNegocio.FormattingEnabled = true;
-            this.cmbNegocio.Location = new System.Drawing.Point(15, 63);
+            this.cmbNegocio.Location = new System.Drawing.Point(15, 103);
             this.cmbNegocio.Name = "cmbNegocio";
             this.cmbNegocio.Size = new System.Drawing.Size(170, 23);
             this.cmbNegocio.TabIndex = 1;
             this.cmbNegocio.SelectedIndexChanged += new System.EventHandler(this.cmbNegocio_SelectedIndexChanged);
-            // 
-            // cmbProducto
-            // 
-            this.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Location = new System.Drawing.Point(15, 63);
-            this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(170, 23);
-            this.cmbProducto.TabIndex = 2;
             // 
             // cmbID
             // 
@@ -91,33 +78,34 @@ namespace DARP_00026919_2EP
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(15, 38);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Location = new System.Drawing.Point(15, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(136, 23);
             this.label1.TabIndex = 4;
             this.label1.Text = "Negocio:";
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(15, 38);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Producto:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.Location = new System.Drawing.Point(45, 18);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.Size = new System.Drawing.Size(142, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "ID de la orden:";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnEliminarO
             // 
+            this.btnEliminarO.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnEliminarO.ForeColor = System.Drawing.Color.Black;
             this.btnEliminarO.Location = new System.Drawing.Point(45, 83);
             this.btnEliminarO.Name = "btnEliminarO";
-            this.btnEliminarO.Size = new System.Drawing.Size(128, 59);
+            this.btnEliminarO.Size = new System.Drawing.Size(142, 59);
             this.btnEliminarO.TabIndex = 7;
             this.btnEliminarO.Text = "Eliminar orden";
             this.btnEliminarO.UseVisualStyleBackColor = true;
@@ -126,29 +114,20 @@ namespace DARP_00026919_2EP
             // 
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cmbNegocio);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(8, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(206, 93);
+            this.groupBox1.Size = new System.Drawing.Size(206, 166);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar por negocio";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.cmbProducto);
-            this.groupBox2.Location = new System.Drawing.Point(8, 153);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(217, 93);
-            this.groupBox2.TabIndex = 9;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Buscar por producto";
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.btnEliminarO);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.cmbID);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
             this.groupBox3.Location = new System.Drawing.Point(344, 29);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(211, 152);
@@ -158,9 +137,11 @@ namespace DARP_00026919_2EP
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.Location = new System.Drawing.Point(367, 217);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 44);
+            this.button1.Size = new System.Drawing.Size(164, 44);
             this.button1.TabIndex = 11;
             this.button1.Text = "Mostrar órdenes";
             this.button1.UseVisualStyleBackColor = true;
@@ -170,16 +151,15 @@ namespace DARP_00026919_2EP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Purple;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserOrderHistory";
             this.Size = new System.Drawing.Size(577, 502);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
         }
@@ -189,14 +169,11 @@ namespace DARP_00026919_2EP
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnEliminarO;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbNegocio;
-        private System.Windows.Forms.ComboBox cmbProducto;
         private System.Windows.Forms.ComboBox cmbID;
     }
 }

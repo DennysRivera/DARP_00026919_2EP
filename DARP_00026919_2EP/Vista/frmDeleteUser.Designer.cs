@@ -38,9 +38,12 @@ namespace DARP_00026919_2EP
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(24, 38);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 36);
+            this.label1.Size = new System.Drawing.Size(138, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario a eliminar:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -54,6 +57,8 @@ namespace DARP_00026919_2EP
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.Location = new System.Drawing.Point(113, 142);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 55);
@@ -66,10 +71,13 @@ namespace DARP_00026919_2EP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 245);
+            this.BackColor = System.Drawing.Color.Purple;
+            this.ClientSize = new System.Drawing.Size(430, 245);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "frmDeleteUser";
             this.Text = "frmDeleteUser";
             this.ResumeLayout(false);

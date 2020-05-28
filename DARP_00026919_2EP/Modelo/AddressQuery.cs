@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace DARP_00026919_2EP
 {
-    public class AddressQuery
+    public static class AddressQuery
     {
         public static List<Address> getLista()
         {

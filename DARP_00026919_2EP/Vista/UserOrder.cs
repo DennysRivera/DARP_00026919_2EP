@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -14,6 +15,9 @@ namespace DARP_00026919_2EP
             MostrarNegocios();
             bool ableButton = ComprobarListas();
             btnOrdenar.Enabled = ableButton;
+            PrepararProducts();
+            PrepararAddresses();
+
         }
         
         private void ActualizaControles(int idUser)
@@ -31,11 +35,9 @@ namespace DARP_00026919_2EP
             cmbDireccion.DataSource = Connection.ExecuteQuery($"SELECT ad.idAddress, ad.address " +
                                                               $"FROM ADDRESS ad " +
                                                               $"WHERE idUser = {idUser};");
-
-            cmbProducto.DataSource = null;
-            cmbProducto.ValueMember = "idProduct";
-            cmbProducto.DisplayMember = "name";
-            cmbProducto.DataSource = ProductQuery.getLista();
+            
+            Business bu = (Business) cmbNegocio.SelectedItem;
+            ActualizarProducto(bu);
         }
 
         private bool ComprobarListas()
@@ -48,14 +50,49 @@ namespace DARP_00026919_2EP
                 return false;
         }
 
+        private List<Product> PrepararProducts()
+        {
+            List<Product> lista = ProductQuery.getLista();
+            return lista;
+        }
+        
+        private List<Address> PrepararAddresses()
+        {
+            List<Address> lista = AddressQuery.getLista();
+            return lista;
+        }
+
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
+            var listaA = PrepararAddresses();
+            var listaP = PrepararProducts();
+            int idAddress = 0, idProduct = 0;
             try
             {
-                Product pr = (Product) cmbProducto.SelectedItem;
-                Address ad = (Address) cmbDireccion.SelectedItem;
                 var createDate = DateTime.Now;
-                AppOrderQuery.newOrder(createDate, pr.idProduct, ad.idAddress);
+                //Address address = new Address();
+                
+
+                foreach (Address address in listaA)
+                {
+                    if (cmbDireccion.Text.Equals(address.address))
+                    {
+                        idAddress = address.idAddress;
+                        break;
+                    }
+                }
+
+                foreach (Product product in listaP)
+                {
+                    if (cmbProducto.Text.Equals(product.name))
+                    {
+                        idProduct = product.idProduct;
+                        break;
+                    }
+                }
+
+                MessageBox.Show(idAddress.ToString());
+                AppOrderQuery.newOrder(createDate, Convert.ToInt32(cmbProducto.ValueMember), Convert.ToInt32(cmbProducto.ValueMember));
 
                 MessageBox.Show("Se ha hecho la orden");
             }

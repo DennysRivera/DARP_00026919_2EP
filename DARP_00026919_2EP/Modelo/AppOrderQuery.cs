@@ -4,7 +4,7 @@ using System.Data;
 
 namespace DARP_00026919_2EP
 {
-    public class AppOrderQuery
+    public static class AppOrderQuery
     {
         public static List<AppOrder> getLista()
         {

@@ -32,6 +32,11 @@
         <e p="Settings.Designer.cs" t="Include" />
         <e p="Settings.settings" t="Include" />
       </e>
+      <e p="Resources" t="Include">
+        <e p="hugo1.jpg" t="Include" />
+        <e p="hugo2.jpg" t="Include" />
+        <e p="hugo3.jpg" t="Include" />
+      </e>
       <e p="Vista" t="Include">
         <e p="Form1.cs" t="Include" />
         <e p="Form1.Designer.cs" t="Include" />

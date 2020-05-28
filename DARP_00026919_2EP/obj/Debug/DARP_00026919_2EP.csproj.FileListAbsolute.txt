@@ -36,3 +36,4 @@ C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_000269
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.UserOrderHistory.resources
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.frmChangePass.resources
 C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.frmRegister.resources
+C:\Users\denny\Desktop\DARP_00026919_2EP\DARP_00026919_2EP\obj\Debug\DARP_00026919_2EP.frmDeleteUser.resources

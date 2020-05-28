@@ -42,34 +42,43 @@ namespace DARP_00026919_2EP
             // 
             // label1
             // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(22, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 46);
+            this.label1.Size = new System.Drawing.Size(143, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Contraseña actual:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(22, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 41);
+            this.label2.Size = new System.Drawing.Size(143, 42);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nueva contraseña:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(22, 181);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 39);
+            this.label3.Size = new System.Drawing.Size(143, 39);
             this.label3.TabIndex = 2;
             this.label3.Text = "Confirmar nueva contraseña:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(202, 41);
+            this.textBox1.Location = new System.Drawing.Point(202, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
             this.textBox1.Size = new System.Drawing.Size(157, 23);
@@ -93,9 +102,11 @@ namespace DARP_00026919_2EP
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.button1.Location = new System.Drawing.Point(140, 254);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 58);
+            this.button1.Size = new System.Drawing.Size(162, 58);
             this.button1.TabIndex = 6;
             this.button1.Text = "Cambiar contreña";
             this.button1.UseVisualStyleBackColor = true;
@@ -105,6 +116,7 @@ namespace DARP_00026919_2EP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(484, 324);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox3);
@@ -113,6 +125,8 @@ namespace DARP_00026919_2EP
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "frmChangePass";
             this.Text = "frmChangePass";
             this.ResumeLayout(false);

@@ -33,6 +33,9 @@ namespace DARP_00026919_2EP
         {
             this.tabAdmin = new System.Windows.Forms.TabControl();
             this.tpHome = new System.Windows.Forms.TabPage();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.btnEliminarU = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -55,7 +58,6 @@ namespace DARP_00026919_2EP
             this.cmbNegocio = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.txtNegocio = new System.Windows.Forms.TextBox();
             this.btnAgregarN = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -79,9 +81,10 @@ namespace DARP_00026919_2EP
             this.tpOrdenes = new System.Windows.Forms.TabPage();
             this.btnMostrarO = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabAdmin.SuspendLayout();
             this.tpHome.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).BeginInit();
@@ -113,7 +116,10 @@ namespace DARP_00026919_2EP
             // 
             // tpHome
             // 
-            this.tpHome.BackColor = System.Drawing.Color.Purple;
+            this.tpHome.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (64)))), ((int) (((byte) (0)))),
+                ((int) (((byte) (64)))));
+            this.tpHome.Controls.Add(this.label12);
+            this.tpHome.Controls.Add(this.pictureBox1);
             this.tpHome.Controls.Add(this.button1);
             this.tpHome.Location = new System.Drawing.Point(4, 24);
             this.tpHome.Name = "tpHome";
@@ -121,6 +127,40 @@ namespace DARP_00026919_2EP
             this.tpHome.Size = new System.Drawing.Size(741, 549);
             this.tpHome.TabIndex = 0;
             this.tpHome.Text = "Home";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(160, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(411, 72);
+            this.label12.TabIndex = 2;
+            this.label12.Text = "Bienvenido";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DARP_00026919_2EP.Properties.Resources.hugo2;
+            this.pictureBox1.Location = new System.Drawing.Point(160, 95);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(411, 378);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.button1.Location = new System.Drawing.Point(6, 477);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 65);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Cambiar contraseña";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // tabPage2
             // 
@@ -146,6 +186,8 @@ namespace DARP_00026919_2EP
             // 
             // btnEliminarU
             // 
+            this.btnEliminarU.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnEliminarU.Location = new System.Drawing.Point(570, 510);
             this.btnEliminarU.Name = "btnEliminarU";
             this.btnEliminarU.Size = new System.Drawing.Size(162, 31);
@@ -181,7 +223,7 @@ namespace DARP_00026919_2EP
             // 
             // radAdmin
             // 
-            this.radAdmin.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+            this.radAdmin.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.radAdmin.ForeColor = System.Drawing.Color.White;
             this.radAdmin.Location = new System.Drawing.Point(15, 16);
@@ -205,9 +247,11 @@ namespace DARP_00026919_2EP
             // 
             // btnMostrarU
             // 
-            this.btnMostrarU.Location = new System.Drawing.Point(20, 175);
+            this.btnMostrarU.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnMostrarU.Location = new System.Drawing.Point(8, 153);
             this.btnMostrarU.Name = "btnMostrarU";
-            this.btnMostrarU.Size = new System.Drawing.Size(97, 39);
+            this.btnMostrarU.Size = new System.Drawing.Size(113, 60);
             this.btnMostrarU.TabIndex = 7;
             this.btnMostrarU.Text = "Mostrar usuarios";
             this.btnMostrarU.UseVisualStyleBackColor = true;
@@ -215,9 +259,11 @@ namespace DARP_00026919_2EP
             // 
             // btnAgregarU
             // 
-            this.btnAgregarU.Location = new System.Drawing.Point(518, 148);
+            this.btnAgregarU.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnAgregarU.Location = new System.Drawing.Point(518, 153);
             this.btnAgregarU.Name = "btnAgregarU";
-            this.btnAgregarU.Size = new System.Drawing.Size(115, 45);
+            this.btnAgregarU.Size = new System.Drawing.Size(150, 51);
             this.btnAgregarU.TabIndex = 6;
             this.btnAgregarU.Text = "Agregar usuario";
             this.btnAgregarU.UseVisualStyleBackColor = true;
@@ -232,21 +278,21 @@ namespace DARP_00026919_2EP
             // 
             // txtApellido
             // 
-            this.txtApellido.Location = new System.Drawing.Point(107, 108);
+            this.txtApellido.Location = new System.Drawing.Point(146, 107);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(171, 23);
             this.txtApellido.TabIndex = 4;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(107, 43);
+            this.txtNombre.Location = new System.Drawing.Point(146, 43);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(171, 23);
             this.txtNombre.TabIndex = 3;
             // 
             // label3
             // 
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(393, 29);
@@ -263,7 +309,7 @@ namespace DARP_00026919_2EP
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(8, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 23);
+            this.label2.Size = new System.Drawing.Size(122, 23);
             this.label2.TabIndex = 1;
             this.label2.Text = "Apellidos:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -273,9 +319,9 @@ namespace DARP_00026919_2EP
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(-3, 43);
+            this.label1.Location = new System.Drawing.Point(6, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 23);
+            this.label1.Size = new System.Drawing.Size(124, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombres:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -295,9 +341,11 @@ namespace DARP_00026919_2EP
             // 
             // btnMostrarN
             // 
+            this.btnMostrarN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.btnMostrarN.Location = new System.Drawing.Point(500, 23);
             this.btnMostrarN.Name = "btnMostrarN";
-            this.btnMostrarN.Size = new System.Drawing.Size(133, 43);
+            this.btnMostrarN.Size = new System.Drawing.Size(192, 43);
             this.btnMostrarN.TabIndex = 11;
             this.btnMostrarN.Text = "Mostrar negocios";
             this.btnMostrarN.UseVisualStyleBackColor = true;
@@ -330,6 +378,9 @@ namespace DARP_00026919_2EP
             // 
             // btnEliminarN
             // 
+            this.btnEliminarN.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnEliminarN.ForeColor = System.Drawing.Color.Black;
             this.btnEliminarN.Location = new System.Drawing.Point(76, 120);
             this.btnEliminarN.Name = "btnEliminarN";
             this.btnEliminarN.Size = new System.Drawing.Size(134, 60);
@@ -351,16 +402,16 @@ namespace DARP_00026919_2EP
             // 
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label6.Location = new System.Drawing.Point(94, 29);
+            this.label6.Location = new System.Drawing.Point(41, 29);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 45);
+            this.label6.Size = new System.Drawing.Size(212, 45);
             this.label6.TabIndex = 4;
             this.label6.Text = "Nombre del negocio:";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.txtNegocio);
             this.groupBox2.Controls.Add(this.btnAgregarN);
             this.groupBox2.Controls.Add(this.label5);
@@ -373,14 +424,6 @@ namespace DARP_00026919_2EP
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar negocio";
             // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Location = new System.Drawing.Point(16, 123);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(224, 89);
-            this.richTextBox1.TabIndex = 3;
-            this.richTextBox1.Text = "";
-            // 
             // txtNegocio
             // 
             this.txtNegocio.Location = new System.Drawing.Point(141, 40);
@@ -390,6 +433,9 @@ namespace DARP_00026919_2EP
             // 
             // btnAgregarN
             // 
+            this.btnAgregarN.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnAgregarN.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarN.Location = new System.Drawing.Point(77, 219);
             this.btnAgregarN.Name = "btnAgregarN";
             this.btnAgregarN.Size = new System.Drawing.Size(134, 60);
@@ -403,9 +449,9 @@ namespace DARP_00026919_2EP
             this.label5.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(16, 81);
+            this.label5.Location = new System.Drawing.Point(38, 97);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 40);
+            this.label5.Size = new System.Drawing.Size(173, 40);
             this.label5.TabIndex = 1;
             this.label5.Text = "Descripción del negocio:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -415,9 +461,9 @@ namespace DARP_00026919_2EP
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(16, 24);
+            this.label4.Location = new System.Drawing.Point(17, 18);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 48);
+            this.label4.Size = new System.Drawing.Size(100, 73);
             this.label4.TabIndex = 0;
             this.label4.Text = "Nombre del negocio:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -430,9 +476,9 @@ namespace DARP_00026919_2EP
             this.tpProductos.Controls.Add(this.dataGridView3);
             this.tpProductos.Controls.Add(this.groupBox5);
             this.tpProductos.Controls.Add(this.groupBox4);
-            this.tpProductos.Location = new System.Drawing.Point(4, 24);
+            this.tpProductos.Location = new System.Drawing.Point(4, 22);
             this.tpProductos.Name = "tpProductos";
-            this.tpProductos.Size = new System.Drawing.Size(741, 549);
+            this.tpProductos.Size = new System.Drawing.Size(741, 551);
             this.tpProductos.TabIndex = 3;
             this.tpProductos.Text = "Productos";
             // 
@@ -441,9 +487,9 @@ namespace DARP_00026919_2EP
             this.label11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(444, 21);
+            this.label11.Location = new System.Drawing.Point(416, 21);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(194, 23);
+            this.label11.Size = new System.Drawing.Size(248, 23);
             this.label11.TabIndex = 5;
             this.label11.Text = "Mostrar productos de:";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -489,9 +535,9 @@ namespace DARP_00026919_2EP
             // 
             this.label10.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label10.Location = new System.Drawing.Point(83, 90);
+            this.label10.Location = new System.Drawing.Point(47, 81);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 23);
+            this.label10.Size = new System.Drawing.Size(167, 33);
             this.label10.TabIndex = 5;
             this.label10.Text = "Producto:";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -507,6 +553,9 @@ namespace DARP_00026919_2EP
             // 
             // btnEliminarP
             // 
+            this.btnEliminarP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnEliminarP.ForeColor = System.Drawing.Color.Black;
             this.btnEliminarP.Location = new System.Drawing.Point(73, 162);
             this.btnEliminarP.Name = "btnEliminarP";
             this.btnEliminarP.Size = new System.Drawing.Size(110, 55);
@@ -519,9 +568,9 @@ namespace DARP_00026919_2EP
             // 
             this.label8.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label8.Location = new System.Drawing.Point(73, 29);
+            this.label8.Location = new System.Drawing.Point(47, 18);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 23);
+            this.label8.Size = new System.Drawing.Size(167, 33);
             this.label8.TabIndex = 1;
             this.label8.Text = "Negocio:";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -555,9 +604,9 @@ namespace DARP_00026919_2EP
             // 
             this.label9.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label9.Location = new System.Drawing.Point(73, 104);
+            this.label9.Location = new System.Drawing.Point(47, 92);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(100, 23);
+            this.label9.Size = new System.Drawing.Size(167, 35);
             this.label9.TabIndex = 4;
             this.label9.Text = "Producto:";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -571,6 +620,9 @@ namespace DARP_00026919_2EP
             // 
             // btnAgregarP
             // 
+            this.btnAgregarP.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnAgregarP.ForeColor = System.Drawing.Color.Black;
             this.btnAgregarP.Location = new System.Drawing.Point(73, 175);
             this.btnAgregarP.Name = "btnAgregarP";
             this.btnAgregarP.Size = new System.Drawing.Size(110, 55);
@@ -583,9 +635,9 @@ namespace DARP_00026919_2EP
             // 
             this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label7.Location = new System.Drawing.Point(73, 28);
+            this.label7.Location = new System.Drawing.Point(47, 18);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.Size = new System.Drawing.Size(167, 32);
             this.label7.TabIndex = 1;
             this.label7.Text = "Negocio:";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -605,17 +657,19 @@ namespace DARP_00026919_2EP
                 ((int) (((byte) (192)))));
             this.tpOrdenes.Controls.Add(this.btnMostrarO);
             this.tpOrdenes.Controls.Add(this.dataGridView4);
-            this.tpOrdenes.Location = new System.Drawing.Point(4, 24);
+            this.tpOrdenes.Location = new System.Drawing.Point(4, 22);
             this.tpOrdenes.Name = "tpOrdenes";
-            this.tpOrdenes.Size = new System.Drawing.Size(741, 549);
+            this.tpOrdenes.Size = new System.Drawing.Size(741, 551);
             this.tpOrdenes.TabIndex = 4;
             this.tpOrdenes.Text = "Órdenes";
             // 
             // btnMostrarO
             // 
-            this.btnMostrarO.Location = new System.Drawing.Point(8, 202);
+            this.btnMostrarO.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnMostrarO.Location = new System.Drawing.Point(8, 187);
             this.btnMostrarO.Name = "btnMostrarO";
-            this.btnMostrarO.Size = new System.Drawing.Size(122, 40);
+            this.btnMostrarO.Size = new System.Drawing.Size(164, 55);
             this.btnMostrarO.TabIndex = 1;
             this.btnMostrarO.Text = "Mostar órdenes";
             this.btnMostrarO.UseVisualStyleBackColor = true;
@@ -633,14 +687,12 @@ namespace DARP_00026919_2EP
             this.dataGridView4.Size = new System.Drawing.Size(735, 298);
             this.dataGridView4.TabIndex = 0;
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.Location = new System.Drawing.Point(6, 476);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(118, 65);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(6, 140);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(320, 23);
+            this.textBox1.TabIndex = 8;
             // 
             // frmAdmin
             // 
@@ -649,13 +701,16 @@ namespace DARP_00026919_2EP
             this.BackColor = System.Drawing.Color.Purple;
             this.ClientSize = new System.Drawing.Size(749, 577);
             this.Controls.Add(this.tabAdmin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "frmAdmin";
             this.Text = "frmAdmin";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAdmin_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAdmin_FormClosed);
             this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.tabAdmin.ResumeLayout(false);
             this.tpHome.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -690,7 +745,6 @@ namespace DARP_00026919_2EP
         private System.Windows.Forms.Button btnEliminarU;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
@@ -726,5 +780,8 @@ namespace DARP_00026919_2EP
         private System.Windows.Forms.ComboBox cmbNegocio2;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

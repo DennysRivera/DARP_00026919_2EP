@@ -86,7 +86,7 @@ namespace DARP_00026919_2EP
                     AppUserQuery.newUser(nuevo);
                     
                     MessageBox.Show("Usuario creado con los datos: \nNombre de usuario: " + txtUsuario.Text +
-                                    ", contraseña: " + txtUsuario.Text + "\nRegistrado como Cliente Activo");
+                                    ", contraseña: " + txtUsuario.Text);
 
                     txtNombre.Text = "";
                     txtApellido.Text = "";
@@ -119,9 +119,18 @@ namespace DARP_00026919_2EP
 
             if (flag)
             {
-                BusinessQuery.newBusiness(txtNegocio.Text, richTextBox1.Text);
-                MessageBox.Show("Negocio agregado");
-                ActualizaControles();
+                try
+                {
+                    BusinessQuery.newBusiness(txtNegocio.Text, textBox1.Text);
+                    MessageBox.Show("Negocio agregado");
+                    ActualizaControles();
+                    textBox1.Clear();
+                    txtNegocio.Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocurrió un error");
+                }
             }
             else
                 MessageBox.Show("Ya hay un negocio con ese nombre");
@@ -129,10 +138,18 @@ namespace DARP_00026919_2EP
 
         private void btnEliminarN_Click(object sender, EventArgs e)
         {
-            Business bu = (Business) cmbNegocio.SelectedItem;
-            BusinessQuery.deleteBusiness(bu.idBusiness);
-            MessageBox.Show("Negocio eliminado");
-            ActualizaControles();
+            string name;
+            try
+            {
+                name = cmbNegocio.Text;
+                BusinessQuery.deleteBusiness(name);
+                MessageBox.Show("Negocio eliminado");
+                ActualizaControles();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error");
+            }
         }
         
         private void btnMostrarN_Click(object sender, EventArgs e)
@@ -153,15 +170,40 @@ namespace DARP_00026919_2EP
 
         private void btnAgregarP_Click(object sender, EventArgs e)
         {
-            Business bu = (Business) cmbNegocioP.SelectedItem;
-            ProductQuery.newProduct(bu.idBusiness, txtProducto.Text);
+            try
+            {
+                Business bu = (Business) cmbNegocioP.SelectedItem;
+                ProductQuery.newProduct(bu.idBusiness, txtProducto.Text);
+
+                MessageBox.Show("Producto agregado");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error");
+            }
         }
 
         private void btnEliminarP_Click(object sender, EventArgs e)
         {
-            Product pr = (Product) cmbProducto.SelectedItem;
-            
-            ProductQuery.deleteProduct(pr.idProduct);
+            try
+            {
+                List<Product> lista = ProductQuery.getLista();
+                foreach (Product pr in lista)
+                {
+                    if (cmbProducto.Text.Equals(pr.name))
+                    {
+                        ProductQuery.deleteProduct(pr.idProduct);
+                        MessageBox.Show("Se eliminó el producto");
+                    }
+                }
+                //Product pr = cmbProducto.SelectedItem;
+                //ProductQuery.deleteProduct(pr.idProduct);
+                //MessageBox.Show("Se eliminó el producto");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocurrió un error");
+            }
         }
 
         private void ActualizarProducto(Business bu)
@@ -172,6 +214,7 @@ namespace DARP_00026919_2EP
             cmbProducto.DataSource = Connection.ExecuteQuery($"SELECT p.idProduct, p.name " +
                                                              $"FROM PRODUCT p " +
                                                              $"WHERE idBusiness = {bu.idBusiness}");
+
         }
 
         private void cmbNegocioEP_SelectedIndexChanged(object sender, EventArgs e)
@@ -179,7 +222,7 @@ namespace DARP_00026919_2EP
             ActualizarProducto((Business) cmbNegocioEP.SelectedItem);
         }
         
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        private void frmAdmin_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MessageBox.Show("¿Seguro que desea salir, " + usuario.username + "?", 
                 "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
@@ -200,7 +243,7 @@ namespace DARP_00026919_2EP
             }
         }
         
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        private void frmAdmin_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
@@ -217,22 +260,6 @@ namespace DARP_00026919_2EP
                 dataGridView3.DataSource = dt;
 
                 //MessageBox.Show("Datos obtenidos exitosamente");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ha ocurrido un error");
-            }
-        }
-
-        private void btnMostrarP_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                var dt = Connection.ExecuteQuery($"SELECT * FROM PRODUCTO");
-
-                dataGridView3.DataSource = dt;
-
-                MessageBox.Show("Datos obtenidos exitosamente");
             }
             catch (Exception ex)
             {
@@ -259,6 +286,12 @@ namespace DARP_00026919_2EP
             {
                 MessageBox.Show("Ha ocurrido un error");
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmChangePass ventana = new frmChangePass(usuario);
+            ventana.ShowDialog();
         }
     }
 }

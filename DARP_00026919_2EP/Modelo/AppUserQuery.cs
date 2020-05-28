@@ -4,7 +4,7 @@ using System.Data;
 
 namespace DARP_00026919_2EP
 {
-    public class AppUserQuery
+    public static class AppUserQuery
     {
         public static List<AppUser> getLista()
         {
@@ -37,7 +37,7 @@ namespace DARP_00026919_2EP
         
         public static void deleteUser(int idUser)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM APPUSER WHERE username = {idUser}");
+            Connection.ExecuteNonQuery($"DELETE FROM APPUSER WHERE idUser = {idUser}");
         }
         
         public static void updatePass(string username, string newPass)

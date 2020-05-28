@@ -14,19 +14,28 @@ namespace DARP_00026919_2EP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Equals(usuario.password))
+            if (textBox1.Text.Equals("") || textBox2.Text.Equals("") || textBox3.Text.Equals(""))
             {
-                if (textBox1.Text.Equals(textBox2.Text))
-                    MessageBox.Show("La nueva contraseña no puede ser la misma que la actual");
-
-                if (textBox2.Text.Equals(textBox3.Text))
-                {
-                    AppUserQuery.updatePass(usuario.username, textBox2.Text);
-                    MessageBox.Show("Nueva contraseña establecida");
-                }
+                MessageBox.Show("Hay campos vacíos");
             }
             else
-                MessageBox.Show("No se reconoció esta conotraseña");
+            {
+                if (textBox1.Text.Equals(usuario.password))
+                {
+                    if (textBox2.Text.Equals(textBox3.Text))
+                    {
+                        AppUserQuery.updatePass(usuario.username, textBox2.Text);
+                        MessageBox.Show("Nueva contraseña establecida");
+                        textBox1.Clear();
+                        textBox2.Clear();
+                        textBox3.Clear();
+                    }
+                    else
+                        MessageBox.Show("La contraseña y su comprobación no coinciden");
+                }
+                else
+                    MessageBox.Show("No se reconoció esta conotraseña");
+            }
         }
 
         private void frmRegister_FormClosing(object sender, FormClosingEventArgs e)

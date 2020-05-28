@@ -18,58 +18,88 @@ namespace DARP_00026919_2EP
         {
             comboBox1.DataSource = null;
             comboBox1.ValueMember = "idAddress";
-            comboBox2.DisplayMember = "address";
-            comboBox1.DataSource = Connection.ExecuteQuery($"SELECT ad.idAddress, ad.address " +
-                                                              $"FROM ADDRESS ad " +
-                                                              $"WHERE idUser = {idUser};");
-            
-            comboBox1.DataSource = null;
-            comboBox1.ValueMember = "idAddress";
-            comboBox2.DisplayMember = "address";
+            comboBox1.DisplayMember = "address";
             comboBox1.DataSource = Connection.ExecuteQuery($"SELECT ad.idAddress, ad.address " +
                                                            $"FROM ADDRESS ad " +
                                                            $"WHERE idUser = {idUser};");
-
+            
+            
+            comboBox2.DataSource = null;
+            comboBox2.ValueMember = "idAddress";
+            comboBox2.DisplayMember = "address";
+            comboBox2.DataSource = Connection.ExecuteQuery($"SELECT ad.idAddress, ad.address " +
+                                                           $"FROM ADDRESS ad " +
+                                                           $"WHERE idUser = {idUser};");
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            try
+            if (textBox1.Text.Equals(""))
+                MessageBox.Show("No hay ninguna dirección");
+            else
             {
-                AddressQuery.newAddress(richTextBox1.Text, usuario.idUser);
-                ActualizaControles(usuario.idUser);
+                try
+                {
+                    AddressQuery.newAddress(textBox1.Text, usuario.idUser);
+                    ActualizaControles(usuario.idUser);
 
-                MessageBox.Show("Dirección almacenada");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrió un error");
+                    MessageBox.Show("Dirección almacenada");
+                    textBox1.Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocurrió un error");
+                }
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            try
+            int idAddress = 0;
+            if(textBox2.Text.Equals(""))
+                MessageBox.Show("No hay nueva dirección");
+            else
             {
-                Address ad = (Address) comboBox1.SelectedItem;
-                AddressQuery.updateAddress(richTextBox2.Text, ad.idAddress);
+                try
+                {
+                    List<Address> lista = AddressQuery.getLista();
+                    foreach (var ad in lista)
+                    {
+                        if (comboBox2.Text.Equals(ad.address))
+                        {
+                            idAddress = ad.idAddress;
+                            break;
+                        }
+                    }
+                    AddressQuery.updateAddress(textBox2.Text, idAddress);
 
-                MessageBox.Show("Dirección modificada");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocurrió un error");
+                    MessageBox.Show("Dirección modificada");
+                    textBox2.Clear();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Ocurrió un error");
+                }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            int idAddress = 0;
             try
             {
-                Address ad = (Address) comboBox1.SelectedItem;
-                AddressQuery.deleteAddress(ad.idAddress);
-
-                MessageBox.Show("Dirección elimininada");
+                List<Address> lista = AddressQuery.getLista();
+                foreach (var ad in lista)
+                {
+                    if (comboBox2.Text.Equals(ad.address))
+                    {
+                       
+                        AddressQuery.deleteAddress(ad.idAddress);
+                        MessageBox.Show("Dirección elimininada");
+                       
+                    }
+                }
+               
             }
             catch (Exception ex)
             {

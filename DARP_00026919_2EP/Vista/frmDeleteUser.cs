@@ -35,6 +35,7 @@ namespace DARP_00026919_2EP
                         {
                             AppUserQuery.deleteUser(au.idUser);
                             MessageBox.Show("Usuario eliminado");
+                            textBox1.Clear();
                             flag = false;
                         }
                         catch (Exception)

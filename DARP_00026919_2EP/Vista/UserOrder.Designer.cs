@@ -52,7 +52,7 @@ namespace DARP_00026919_2EP
             // 
             this.cmbNegocio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNegocio.FormattingEnabled = true;
-            this.cmbNegocio.Location = new System.Drawing.Point(29, 59);
+            this.cmbNegocio.Location = new System.Drawing.Point(29, 67);
             this.cmbNegocio.Name = "cmbNegocio";
             this.cmbNegocio.Size = new System.Drawing.Size(196, 23);
             this.cmbNegocio.TabIndex = 0;
@@ -62,7 +62,7 @@ namespace DARP_00026919_2EP
             // 
             this.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Location = new System.Drawing.Point(29, 138);
+            this.cmbProducto.Location = new System.Drawing.Point(29, 156);
             this.cmbProducto.Name = "cmbProducto";
             this.cmbProducto.Size = new System.Drawing.Size(196, 23);
             this.cmbProducto.TabIndex = 1;
@@ -73,9 +73,9 @@ namespace DARP_00026919_2EP
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 220);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 290);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(288, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(326, 249);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridView2
@@ -84,7 +84,7 @@ namespace DARP_00026919_2EP
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(320, 220);
+            this.dataGridView2.Location = new System.Drawing.Point(443, 290);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.Size = new System.Drawing.Size(288, 247);
@@ -92,40 +92,55 @@ namespace DARP_00026919_2EP
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(80, 33);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Location = new System.Drawing.Point(50, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(100, 23);
+            this.label1.Size = new System.Drawing.Size(130, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Negocio:";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(80, 112);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label2.Location = new System.Drawing.Point(50, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(130, 37);
             this.label2.TabIndex = 5;
             this.label2.Text = "Producto:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(35, 194);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(80, 252);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 23);
+            this.label3.Size = new System.Drawing.Size(148, 23);
             this.label3.TabIndex = 6;
             this.label3.Text = "Negocios:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(346, 194);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(447, 257);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(204, 23);
+            this.label4.Size = new System.Drawing.Size(284, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Productos del negocio seleccionado:";
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.Location = new System.Drawing.Point(376, 107);
+            this.btnOrdenar.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.btnOrdenar.ForeColor = System.Drawing.Color.Black;
+            this.btnOrdenar.Location = new System.Drawing.Point(440, 138);
             this.btnOrdenar.Name = "btnOrdenar";
             this.btnOrdenar.Size = new System.Drawing.Size(118, 54);
             this.btnOrdenar.TabIndex = 8;
@@ -135,9 +150,11 @@ namespace DARP_00026919_2EP
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(394, 29);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label5.Location = new System.Drawing.Point(420, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 23);
+            this.label5.Size = new System.Drawing.Size(165, 33);
             this.label5.TabIndex = 9;
             this.label5.Text = "Mi dirección:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -146,7 +163,7 @@ namespace DARP_00026919_2EP
             // 
             this.cmbDireccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbDireccion.FormattingEnabled = true;
-            this.cmbDireccion.Location = new System.Drawing.Point(344, 59);
+            this.cmbDireccion.Location = new System.Drawing.Point(408, 67);
             this.cmbDireccion.Name = "cmbDireccion";
             this.cmbDireccion.Size = new System.Drawing.Size(196, 23);
             this.cmbDireccion.TabIndex = 10;
@@ -160,9 +177,10 @@ namespace DARP_00026919_2EP
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.cmbProducto);
             this.groupBox1.Controls.Add(this.cmbNegocio);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(3, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(601, 178);
+            this.groupBox1.Size = new System.Drawing.Size(736, 223);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Ordenar producto";
@@ -171,13 +189,15 @@ namespace DARP_00026919_2EP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int) (((byte) (192)))), ((int) (((byte) (0)))),
+                ((int) (((byte) (192)))));
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Name = "UserOrder";
-            this.Size = new System.Drawing.Size(611, 470);
+            this.Size = new System.Drawing.Size(766, 542);
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize) (this.dataGridView2)).EndInit();
             this.groupBox1.ResumeLayout(false);

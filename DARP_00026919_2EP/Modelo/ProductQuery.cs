@@ -4,7 +4,7 @@ using System.Data;
 
 namespace DARP_00026919_2EP
 {
-    public class ProductQuery
+    public static class ProductQuery
     {
         public static List<Product> getLista()
         {
