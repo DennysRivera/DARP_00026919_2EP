@@ -32,9 +32,9 @@ namespace DARP_00026919_2EP
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cmbNegocio = new System.Windows.Forms.ComboBox();
+            this.cmbProducto = new System.Windows.Forms.ComboBox();
+            this.cmbID = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -61,29 +61,33 @@ namespace DARP_00026919_2EP
             this.dataGridView1.Size = new System.Drawing.Size(573, 234);
             this.dataGridView1.TabIndex = 0;
             // 
-            // comboBox1
+            // cmbNegocio
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(15, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(170, 23);
-            this.comboBox1.TabIndex = 1;
+            this.cmbNegocio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbNegocio.FormattingEnabled = true;
+            this.cmbNegocio.Location = new System.Drawing.Point(15, 63);
+            this.cmbNegocio.Name = "cmbNegocio";
+            this.cmbNegocio.Size = new System.Drawing.Size(170, 23);
+            this.cmbNegocio.TabIndex = 1;
+            this.cmbNegocio.SelectedIndexChanged += new System.EventHandler(this.cmbNegocio_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cmbProducto
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(15, 64);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(170, 23);
-            this.comboBox2.TabIndex = 2;
+            this.cmbProducto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(15, 63);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(170, 23);
+            this.cmbProducto.TabIndex = 2;
             // 
-            // comboBox3
+            // cmbID
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(46, 45);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 23);
-            this.comboBox3.TabIndex = 3;
+            this.cmbID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbID.FormattingEnabled = true;
+            this.cmbID.Location = new System.Drawing.Point(45, 45);
+            this.cmbID.Name = "cmbID";
+            this.cmbID.Size = new System.Drawing.Size(121, 23);
+            this.cmbID.TabIndex = 3;
             // 
             // label1
             // 
@@ -103,7 +107,7 @@ namespace DARP_00026919_2EP
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(46, 19);
+            this.label3.Location = new System.Drawing.Point(45, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 6;
@@ -111,7 +115,7 @@ namespace DARP_00026919_2EP
             // 
             // btnEliminarO
             // 
-            this.btnEliminarO.Location = new System.Drawing.Point(46, 83);
+            this.btnEliminarO.Location = new System.Drawing.Point(45, 83);
             this.btnEliminarO.Name = "btnEliminarO";
             this.btnEliminarO.Size = new System.Drawing.Size(128, 59);
             this.btnEliminarO.TabIndex = 7;
@@ -121,7 +125,7 @@ namespace DARP_00026919_2EP
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbNegocio);
             this.groupBox1.Location = new System.Drawing.Point(8, 29);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(206, 93);
@@ -132,7 +136,7 @@ namespace DARP_00026919_2EP
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.comboBox2);
+            this.groupBox2.Controls.Add(this.cmbProducto);
             this.groupBox2.Location = new System.Drawing.Point(8, 153);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(217, 93);
@@ -144,7 +148,7 @@ namespace DARP_00026919_2EP
             // 
             this.groupBox3.Controls.Add(this.btnEliminarO);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.comboBox3);
+            this.groupBox3.Controls.Add(this.cmbID);
             this.groupBox3.Location = new System.Drawing.Point(344, 29);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(211, 152);
@@ -156,10 +160,11 @@ namespace DARP_00026919_2EP
             // 
             this.button1.Location = new System.Drawing.Point(367, 217);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 44);
+            this.button1.Size = new System.Drawing.Size(150, 44);
             this.button1.TabIndex = 11;
             this.button1.Text = "Mostrar órdenes";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // UserOrderHistory
             // 
@@ -190,8 +195,8 @@ namespace DARP_00026919_2EP
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbNegocio;
+        private System.Windows.Forms.ComboBox cmbProducto;
+        private System.Windows.Forms.ComboBox cmbID;
     }
 }

@@ -101,7 +101,8 @@ namespace DARP_00026919_2EP
 
         private void btnEliminarU_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            frmDeleteUser ventana = new frmDeleteUser();
+            ventana.ShowDialog();
         }
 
         private void btnAgregarN_Click(object sender, EventArgs e)

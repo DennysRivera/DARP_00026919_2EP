@@ -122,6 +122,12 @@
         <Compile Include="Vista\frmChangePass.Designer.cs">
           <DependentUpon>frmChangePass.cs</DependentUpon>
         </Compile>
+        <Compile Include="Vista\frmDeleteUser.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Vista\frmDeleteUser.Designer.cs">
+          <DependentUpon>frmDeleteUser.cs</DependentUpon>
+        </Compile>
         <Compile Include="Vista\frmRegister.cs">
           <SubType>Form</SubType>
         </Compile>
@@ -169,6 +175,9 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Vista\frmChangePass.resx">
           <DependentUpon>frmChangePass.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\frmDeleteUser.resx">
+          <DependentUpon>frmDeleteUser.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Vista\frmRegister.resx">
           <DependentUpon>frmRegister.cs</DependentUpon>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Windows.Forms;
 
 namespace DARP_00026919_2EP
 {
@@ -24,19 +25,19 @@ namespace DARP_00026919_2EP
             return addressList;    
         }
         
-        public static void newAddress(Address nuevo)
+        public static void newAddress(string address, int idUser)
         {
             Connection.ExecuteNonQuery($"INSERT INTO ADDRESS(idUser, address) " +
-                                       $"VALUES({nuevo.idUser}," +
-                                       $" '{nuevo.address}')");
+                                       $"VALUES({idUser}," +
+                                       $" '{address}')");
         }
         
-        public static void deleteAddress(string address, int idAddress)
+        public static void deleteAddress(int idAddress)
         {
-            Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE address = '{address}'");
+            Connection.ExecuteNonQuery($"DELETE FROM ADDRESS WHERE address = {idAddress}");
         }
         
-        public static void updateAddress(string address, string idAddress)
+        public static void updateAddress(string address, int idAddress)
         {
             Connection.ExecuteNonQuery($"UPDATE ADDRESS SET address = '{address}'" +
                                        $"WHERE idAddress = {idAddress}");

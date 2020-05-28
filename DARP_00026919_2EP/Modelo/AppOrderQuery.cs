@@ -25,12 +25,12 @@ namespace DARP_00026919_2EP
             return orderList;    
         }
         
-        public static void newOrder(AppOrder nuevo)
+        public static void newOrder(DateTime createDate, int idProduct, int idAddress)
         {
             Connection.ExecuteNonQuery($"INSERT INTO APPORDER(createDate, idProduct, idAddress) " +
-                                       $"VALUES({nuevo.createDate}," +
-                                       $"{nuevo.idProduct}," +
-                                       $"{nuevo.idAddress})");
+                                       $"VALUES({createDate}," +
+                                       $"{idProduct}," +
+                                       $"{idAddress})");
         }
         
         public static void deleteOrder(int idOrder)

@@ -47,7 +47,7 @@ namespace DARP_00026919_2EP
                                 }
                                 else
                                 {
-                                    frmUser ventana = new frmUser();
+                                    frmUser ventana = new frmUser(u);
                                     ventana.Show();
                                     this.Hide();
                                     flag = false;
