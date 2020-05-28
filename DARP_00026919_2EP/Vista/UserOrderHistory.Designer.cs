@@ -65,7 +65,6 @@ namespace DARP_00026919_2EP
             this.cmbNegocio.Name = "cmbNegocio";
             this.cmbNegocio.Size = new System.Drawing.Size(170, 23);
             this.cmbNegocio.TabIndex = 1;
-            this.cmbNegocio.SelectedIndexChanged += new System.EventHandler(this.cmbNegocio_SelectedIndexChanged);
             // 
             // cmbID
             // 
