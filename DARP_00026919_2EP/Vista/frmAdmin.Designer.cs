@@ -58,6 +58,7 @@ namespace DARP_00026919_2EP
             this.cmbNegocio = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtNegocio = new System.Windows.Forms.TextBox();
             this.btnAgregarN = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -81,7 +82,6 @@ namespace DARP_00026919_2EP
             this.tpOrdenes = new System.Windows.Forms.TabPage();
             this.btnMostrarO = new System.Windows.Forms.Button();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabAdmin.SuspendLayout();
             this.tpHome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.pictureBox1)).BeginInit();
@@ -133,9 +133,9 @@ namespace DARP_00026919_2EP
             this.label12.Font = new System.Drawing.Font("Century Gothic", 48F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(160, 21);
+            this.label12.Location = new System.Drawing.Point(115, 20);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(411, 72);
+            this.label12.Size = new System.Drawing.Size(512, 72);
             this.label12.TabIndex = 2;
             this.label12.Text = "Bienvenido";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -177,10 +177,10 @@ namespace DARP_00026919_2EP
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(741, 549);
+            this.tabPage2.Size = new System.Drawing.Size(741, 551);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Crear usuario";
             // 
@@ -333,9 +333,9 @@ namespace DARP_00026919_2EP
             this.tpNegocios.Controls.Add(this.dataGridView2);
             this.tpNegocios.Controls.Add(this.groupBox3);
             this.tpNegocios.Controls.Add(this.groupBox2);
-            this.tpNegocios.Location = new System.Drawing.Point(4, 24);
+            this.tpNegocios.Location = new System.Drawing.Point(4, 22);
             this.tpNegocios.Name = "tpNegocios";
-            this.tpNegocios.Size = new System.Drawing.Size(741, 549);
+            this.tpNegocios.Size = new System.Drawing.Size(741, 551);
             this.tpNegocios.TabIndex = 2;
             this.tpNegocios.Text = "Negocios";
             // 
@@ -423,6 +423,13 @@ namespace DARP_00026919_2EP
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Agregar negocio";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(6, 140);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(320, 23);
+            this.textBox1.TabIndex = 8;
             // 
             // txtNegocio
             // 
@@ -687,13 +694,6 @@ namespace DARP_00026919_2EP
             this.dataGridView4.Size = new System.Drawing.Size(735, 298);
             this.dataGridView4.TabIndex = 0;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 140);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(320, 23);
-            this.textBox1.TabIndex = 8;
-            // 
             // frmAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -704,7 +704,7 @@ namespace DARP_00026919_2EP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "frmAdmin";
-            this.Text = "frmAdmin";
+            this.Text = "Administrador";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmAdmin_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmAdmin_FormClosed);
             this.Load += new System.EventHandler(this.frmAdmin_Load);

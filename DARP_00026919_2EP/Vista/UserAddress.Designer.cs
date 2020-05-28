@@ -215,7 +215,7 @@ namespace DARP_00026919_2EP
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode =
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(369, 319);
+            this.dataGridView1.Location = new System.Drawing.Point(369, 318);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(324, 270);
@@ -226,7 +226,7 @@ namespace DARP_00026919_2EP
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(417, 267);
+            this.label5.Location = new System.Drawing.Point(416, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(210, 39);
             this.label5.TabIndex = 10;

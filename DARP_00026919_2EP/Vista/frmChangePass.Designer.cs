@@ -128,7 +128,7 @@ namespace DARP_00026919_2EP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "frmChangePass";
-            this.Text = "frmChangePass";
+            this.Text = "Cambiar contraseña";
             this.ResumeLayout(false);
             this.PerformLayout();
         }

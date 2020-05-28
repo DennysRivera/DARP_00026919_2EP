@@ -29,8 +29,7 @@ namespace DARP_00026919_2EP
             cmbNegocio.ValueMember = "idBusiness";
             cmbNegocio.DisplayMember = "name";
             cmbNegocio.DataSource = listaB;
-            //poblarGrafico();
-            
+
             cmbNegocio2.DataSource = null;
             cmbNegocio2.ValueMember = "idBusiness";
             cmbNegocio2.DisplayMember = "name";
@@ -196,9 +195,6 @@ namespace DARP_00026919_2EP
                         MessageBox.Show("Se eliminó el producto");
                     }
                 }
-                //Product pr = cmbProducto.SelectedItem;
-                //ProductQuery.deleteProduct(pr.idProduct);
-                //MessageBox.Show("Se eliminó el producto");
             }
             catch (Exception ex)
             {

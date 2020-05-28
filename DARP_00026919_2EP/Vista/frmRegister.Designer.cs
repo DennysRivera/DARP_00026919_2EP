@@ -174,7 +174,7 @@ namespace DARP_00026919_2EP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "frmRegister";
-            this.Text = "frmRegister";
+            this.Text = "Registrarse";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmRegister_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();

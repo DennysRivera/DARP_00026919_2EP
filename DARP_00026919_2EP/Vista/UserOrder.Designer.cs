@@ -75,7 +75,7 @@ namespace DARP_00026919_2EP
                 System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(23, 290);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(326, 249);
+            this.dataGridView1.Size = new System.Drawing.Size(325, 249);
             this.dataGridView1.TabIndex = 2;
             // 
             // dataGridView2
@@ -96,7 +96,7 @@ namespace DARP_00026919_2EP
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.Location = new System.Drawing.Point(50, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 37);
+            this.label1.Size = new System.Drawing.Size(129, 37);
             this.label1.TabIndex = 4;
             this.label1.Text = "Negocio:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -105,9 +105,9 @@ namespace DARP_00026919_2EP
             // 
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.label2.Location = new System.Drawing.Point(50, 116);
+            this.label2.Location = new System.Drawing.Point(50, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 37);
+            this.label2.Size = new System.Drawing.Size(129, 37);
             this.label2.TabIndex = 5;
             this.label2.Text = "Producto:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -131,7 +131,7 @@ namespace DARP_00026919_2EP
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(447, 257);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(284, 23);
+            this.label4.Size = new System.Drawing.Size(283, 23);
             this.label4.TabIndex = 7;
             this.label4.Text = "Productos del negocio seleccionado:";
             // 
@@ -154,7 +154,7 @@ namespace DARP_00026919_2EP
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label5.Location = new System.Drawing.Point(420, 31);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(165, 33);
+            this.label5.Size = new System.Drawing.Size(164, 33);
             this.label5.TabIndex = 9;
             this.label5.Text = "Mi dirección:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

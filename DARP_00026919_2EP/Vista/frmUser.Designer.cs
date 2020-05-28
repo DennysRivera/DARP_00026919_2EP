@@ -169,7 +169,7 @@ namespace DARP_00026919_2EP
             this.Controls.Add(this.tableLayoutPanel1);
             this.MaximizeBox = false;
             this.Name = "frmUser";
-            this.Text = "frmUser";
+            this.Text = "Usuario";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmUser_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmUser_FormClosed);
             this.tableLayoutPanel1.ResumeLayout(false);

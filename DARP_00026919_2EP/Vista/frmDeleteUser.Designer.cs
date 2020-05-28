@@ -79,7 +79,7 @@ namespace DARP_00026919_2EP
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "frmDeleteUser";
-            this.Text = "frmDeleteUser";
+            this.Text = "Eliminar usuario";
             this.ResumeLayout(false);
             this.PerformLayout();
         }
